@@ -12,3 +12,7 @@ app.get("/", (req, res) => {
 app.get("/principal", (req, res) => {
   res.send("<h1>Probando deploy de Railway</h1>");
 });
+
+app.get("/variable", (req, res) => {
+  res.send({ status: "success", variable: process.env.JOAQUIN });
+});
