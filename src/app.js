@@ -16,3 +16,7 @@ app.get("/principal", (req, res) => {
 app.get("/variable", (req, res) => {
   res.send({ status: "success", variable: process.env.JOAQUIN });
 });
+
+app.get("/otraVariable", (req, res) => {
+  res.send({ status: "success", variable2: process.env.CLAVE });
+});
